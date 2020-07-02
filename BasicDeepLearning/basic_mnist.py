@@ -38,4 +38,11 @@ network.compile(optimizer='rmsprop',
 
 # fitting the model
 # Specify the hyper parameters such as batch sizing and Epoch !
+
 network.fit(train_images, train_labels, batch_size=128, epochs=5)
+
+# Evaluation of the training  and the testing loss boies !
+test_loss, test_acc = network.evaluate(test_images, test_labels)
+
+
+print('test_acc:', test_acc)
